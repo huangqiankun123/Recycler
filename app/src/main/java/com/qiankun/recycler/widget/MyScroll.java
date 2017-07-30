@@ -7,6 +7,7 @@ import android.widget.ScrollView;
 
 /**
  * Created by xcy on 2017/7/24.
+ * 嵌套滑动控件时 解决滑动冲突问题  根本原因待探究 TODO
  */
 
 public class MyScroll extends ScrollView {

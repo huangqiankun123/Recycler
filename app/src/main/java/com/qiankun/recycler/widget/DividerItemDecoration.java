@@ -20,13 +20,14 @@ import android.view.View;
 public class DividerItemDecoration extends RecyclerView.ItemDecoration {
 
     private int mOrientation = LinearLayoutManager.VERTICAL;
-    private Drawable mDivider;
+   private Drawable mDivider ;
     private int[] attrs = new int[]{android.R.attr.listDivider};
 
     public DividerItemDecoration(Context context, int mOrientation) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs);
         mDivider = typedArray.getDrawable(0);
         typedArray.recycle();
+//        mDivider =context.getDrawable(R.drawable.recycler_item_divider);
         setOrientation(mOrientation);
     }
 
@@ -119,5 +120,13 @@ public class DividerItemDecoration extends RecyclerView.ItemDecoration {
         } else {
             outRect.set(0, 0, mDivider.getIntrinsicWidth(), 0);
         }
+
+        /**
+         * outRect.set(0, 0, 0, mDivider.getIntrinsicHeight());
+         *
+         * 对这个参数的理解
+         *  相对于条目的左上右下的 偏移量值
+         */
+
     }
 }

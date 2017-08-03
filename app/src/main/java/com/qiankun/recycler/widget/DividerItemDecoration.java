@@ -20,14 +20,14 @@ import android.view.View;
 public class DividerItemDecoration extends RecyclerView.ItemDecoration {
 
     private int mOrientation = LinearLayoutManager.VERTICAL;
-   private Drawable mDivider ;
+    private Drawable  mDivider;
     private int[] attrs = new int[]{android.R.attr.listDivider};
 
     public DividerItemDecoration(Context context, int mOrientation) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs);
         mDivider = typedArray.getDrawable(0);
         typedArray.recycle();
-//        mDivider =context.getDrawable(R.drawable.recycler_item_divider);
+//        mDivider = ContextCompat.getDrawable(context,drawableId);
         setOrientation(mOrientation);
     }
 

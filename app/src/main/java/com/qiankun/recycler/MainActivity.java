@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.qiankun.recycler.activities.DividerActivity;
 import com.qiankun.recycler.activities.FenLanActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, FenLanActivity.class));
                 break;
             case R.id.button2:
-                startActivity(new Intent(this, FenLanActivity.class));
+                startActivity(new Intent(this, DividerActivity.class));
                 break;
         }
     }

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.qiankun.recycler.activities.DialogActivity;
 import com.qiankun.recycler.activities.DividerActivity;
 import com.qiankun.recycler.activities.FenLanActivity;
 
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button2:
                 startActivity(new Intent(this, DividerActivity.class));
+                break;
+            case R.id.button3:
+                startActivity(new Intent(this, DialogActivity.class));
                 break;
         }
     }

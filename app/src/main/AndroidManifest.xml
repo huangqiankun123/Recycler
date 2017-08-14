@@ -19,6 +19,7 @@
 
         <activity android:name=".activities.FenLanActivity"/>
         <activity android:name=".activities.DividerActivity"/>
+        <activity android:name=".activities.DialogActivity"/>
     </application>
 
 </manifest>
